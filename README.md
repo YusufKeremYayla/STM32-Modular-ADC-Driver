@@ -1,5 +1,8 @@
 # STM32 Modular ADC Driver with DMA & Moving Average Filter
 
+<img width="2816" height="1536" alt="btk" src="https://github.com/user-attachments/assets/d9b154c5-ca3d-4a71-85fe-ed2e8c5cdafb" />
+
+
 This project demonstrates a bare-metal embedded software implementation on STM32F4. It features a custom modular driver architecture to read analog signals via ADC using DMA, process the data with a smoothing filter, and control LEDs based on voltage thresholds.
 
 ## 🚀 Key Features 
