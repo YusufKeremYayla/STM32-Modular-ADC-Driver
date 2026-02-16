@@ -2,13 +2,13 @@
 
 This project demonstrates a bare-metal embedded software implementation on STM32F4. It features a custom modular driver architecture to read analog signals via ADC using DMA, process the data with a smoothing filter, and control LEDs based on voltage thresholds.
 
-## 🚀 Key Features (Öne Çıkan Özellikler)
+## 🚀 Key Features 
 * **DMA Integration:** ADC conversions are handled via Direct Memory Access (DMA) to offload the CPU.
 * **Modular Driver Architecture:** The code is structured into separate layers (`adc_drive`, `io_driver`) instead of a monolithic `main.c`, following clean code principles.
 * **Signal Processing:** Implements a **64-sample Moving Average Filter** to stabilize potentiometer readings and eliminate noise.
 * **Linear Mapping:** Converts raw voltage data into percentage (0-100%) for precise logic control.
 
-## 📂 Project Structure (Dosya Yapısı)
+## 📂 Project Structure 
 * `Core/Src/adc_drive.c`: Custom ADC driver logic (Initialization, DMA callback handling, Filtering).
 * `Core/Src/io_driver.c`: GPIO control logic (LEDs, Button Debouncing).
 * `Core/Src/main.c`: Application layer logic.
